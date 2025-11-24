@@ -6,16 +6,9 @@
 #include <vector>
 #include <winternl.h>
 
-
-#define PRINT_NONE 2
-#define PRINT_NORMAL 1
-#define PRINT_ALL 0
-
 namespace mapper
 {
     inline void* target_handle{};
-
-    inline char print_type = PRINT_ALL;
 
     struct dll
     {
