@@ -334,7 +334,7 @@ namespace mapper
         return true;
     }
 
-    inline bool map_from_file_path(std::string_view& dll_name, std::string_view& target_name)
+    inline bool map_from_file_path(std::string_view dll_name, std::string_view target_name)
     {
         // Load file into byte array
         std::ifstream file(std::string(dll_name), std::ios::in | std::ios::binary);
@@ -358,7 +358,7 @@ namespace mapper
         return map_dll(phys, target_name);
     }
 
-    inline bool map_from_byte_array(std::unique_ptr<char[]>& buffer, std::size_t& size, std::string_view& target_name)
+    inline bool map_from_byte_array(std::unique_ptr<char[]>& buffer, std::size_t size, std::string_view target_name)
     {
         dll phys{size};
         phys.buffer = std::move(buffer);
@@ -367,3 +367,4 @@ namespace mapper
         return map_dll(phys, target_name);
     }
 }
+
