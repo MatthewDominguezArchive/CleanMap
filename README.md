@@ -26,7 +26,3 @@ mapper::map_from_byte_array(meow, size, target_name)
 ```cpp
 unsigned long main_thread(void* trash)
 ```
-
-![before](https://pasteboard.co/hirgP5Zpmc8A.png)
-
-![after](https://pasteboard.co/9OABMVxLrWpV.png)
