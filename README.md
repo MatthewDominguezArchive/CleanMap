@@ -24,5 +24,5 @@ mapper::map_from_byte_array(meow, size, target_name)
 
 ### Your DLL entry point:
 ```cpp
-unsigned long main_thread(void* trash)
+unsigned long DllMain(void* trash)
 ```
